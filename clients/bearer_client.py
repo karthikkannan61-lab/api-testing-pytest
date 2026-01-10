@@ -11,11 +11,12 @@ class BearerClient:
             json={
                 "username": username,
                 "password": password
-            },
-            timeout=10
+            }
         )
 
-        self.token = response.json().get("token")
+        if response.status_code in (200, 201):
+            self.token = response.json().get("token")
+
         return response
 
     def get_products(self):
