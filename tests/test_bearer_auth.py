@@ -2,13 +2,6 @@ import pytest
 from clients.bearer_client import BearerClient
 from config.config import Config
 
-# =========================================================
-# TEST DATA (CONSTANTS)
-# =========================================================
-
-USERNAME = "mor_2314"
-PASSWORD = "83r5^_"
-
 
 # =========================================================
 # HELPER FUNCTIONS (REUSABLE ASSERTIONS)
